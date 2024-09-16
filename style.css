@@ -1,0 +1,90 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  margin: auto;
+  color: white;
+}
+#box {
+  width: 50%;
+  padding: 50px 30px;
+  background: linear-gradient(tomato, orange);
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 0.5px black;
+}
+#all {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 10px;
+  border-bottom: 2px solid aqua;
+  padding-bottom: 10px;
+  margin: 0;
+}
+#subs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+#subs p {
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 0;
+  box-shadow: 1px 1px 10px 0.5px black;
+  background: linear-gradient(tomato, orange);
+}
+#btnDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+#btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: linear-gradient(tomato, orange);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 1px 1px 20px 1px white;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+#btn:hover {
+  transform: scale(1.2);
+  box-shadow: 1px 1px 20px 1px black;
+}
+#next {
+  text-align: center;
+  font-size: 30px;
+  border-bottom: 2px solid aqua;
+  padding-bottom: 10px;
+}
+@media only screen and (max-width: 600px) {
+  #box {
+    width: 90%;
+    height: 90%;
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  #all {
+    margin: 20px;
+  }
+  #subs {
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+  }
+}
